@@ -19,7 +19,7 @@ class Tip:
 def download_tip(tip):
 
     print(f'\n\nDownload {tip.id} at {tip.timestamp} from {tip.url}')
-    os.system(f'youtube-dl -f "bestvideo[ext=webm][height<=?1080]+bestaudio" --merge-output-format webm -o "clips/{tip.id}.%(ext)s" "{tip.url}"')
+    os.system(f'youtube-dl -f "bestvideo[ext=webm][height<=?1080]+bestaudio" --cookies=cookies.txt --retries 3 --merge-output-format webm -o "clips/{tip.id}.%(ext)s" "{tip.url}"')
     os.system(f'ffmpeg -y -ss {tip.timestamp} -i "clips/{tip.id}.webm" -t 00:00:20.00 -c:v copy -c:a copy tips/{tip.id}.webm')
     os.remove(f'clips/{tip.id}.webm')
 

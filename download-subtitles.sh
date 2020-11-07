@@ -18,5 +18,5 @@ done
 
 # Download subtitles from every video
 while read url; do
-  youtube-dl --write-sub --write-auto-sub --sub-lang en --skip-download $url -o "subs/%(id)s.%(ext)s"
+  youtube-dl --cookies="./cookies.txt" --retries 3 --write-sub --write-auto-sub --sub-lang en --skip-download $url -o "subs/%(id)s.%(ext)s"
 done <urls.txt
