@@ -28,6 +28,7 @@ Cawling for "protips" is completed in three steps:
     .
     ├── subs
     ├── clips
+    ├── tips
     ├── download-protips.py
     ├── download-subtitles.sh
     └── README.md
@@ -46,7 +47,7 @@ Cawling for "protips" is completed in three steps:
     ```
     This process involves downloading *every* episode with a protip so it's going to take a while and use a ton of bandwidth. I've hardcoded the limit to download the videos at `<=1080p` resolution, which speeds things up but it still takes hours. If your internet is slow (like mine) consider renting a VPC with gigabit internet and running it there!
 
-At the end, you're left with a `clips` folder full of short video clips of all found the protips!
+At the end, you're left with a `tips` folder full of short video clips of all found the protips!
 
 ## Results
 
