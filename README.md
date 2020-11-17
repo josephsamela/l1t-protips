@@ -6,6 +6,8 @@ Everyone loves the L1T news! Those rascals have a running joke giving "protips" 
 
 That's what these scripts do! They use the Youtube auto-generated subtitles to locate the timestamp(s) of the phrase "protip" inside every video and download the clip!
 
+<iframe style="position:relative;top:0;left:0;width:100%;height:calc(90vw/1.777778);max-height: 395px;min-height: 255px;" src="https://www.youtube.com/embed/_K_5wVtvGqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Setup
 
 Ok, to get this done you'll need a bash shell with the following tools.
@@ -51,6 +53,6 @@ At the end, you're left with a `tips` folder full of short video clips of all fo
 
 ## Results
 
-The scripts certially work, but I can't be sure they find every last protip. I don't know if you can really be sure of the count without re-watching the entirity of the news. However, it does work well enough to make a fun [supercut like this]()!
+The scripts certially work, but I can't be sure they find every last protip. I don't know if you can really be sure of the count without re-watching the entirity of the news. However, it does work well enough to make a fun [supercut like this](https://youtu.be/_K_5wVtvGqA)!
 
 If you think you can improve the match-rate, feel free to fork and make improvements. Happy Devember 2020!
